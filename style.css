@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
+:root {
+  --branco: hsl(0, 0%, 100%);
+  --azul-claro: hsl(215, 51%, 70%);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +16,7 @@ body {
 
 .card {
   width: 20rem;
-  height: 30rem;
+  height: 32rem;
   background-color: hsl(216, 50%, 16%);
   font-family: "Outfit", sans-serif;
 
@@ -32,21 +37,21 @@ body {
 }
 
 .titulo {
-  color: hsl(0, 0%, 100%);
+  color: var(--branco);
   font-size: 18px;
   display: flex;
   align-self: baseline;
 }
 
 .texto {
-  color: hsl(215, 51%, 70%);
+  color: var(--azul-claro);
   font-size: 18px;
 }
 
 .info {
   display: flex;
-  align-self: baseline;
-  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .preco img {
@@ -57,51 +62,54 @@ body {
 .preco {
   display: flex;
   align-items: center;
-  margin: 1rem;
 }
 
 .valor {
   color: hsl(178, 100%, 50%);
+  margin-left: 10px;
 }
 
 .relogio img {
   width: 15px;
   height: auto;
+  margin-right: 10px;
 }
 
 .relogio {
   display: flex;
-  align-items: end;
-  margin: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .tempo {
-  color: hsl(215, 51%, 70%);
+  color: var(--azul-claro);
 }
 
 .autor img {
   width: 25px;
   height: auto;
-  border: 1px solid #fff;
+  border: 1px solid var(--branco);
 }
 
 .autor {
   display: flex;
   align-self: baseline;
   font-size: 11px;
+  gap: 10px;
 }
 
 .cor-padrao {
-  color: hsl(215, 51%, 70%);
+  color: var(--azul-claro);
 }
 
 .cor-nome {
-  color: hsl(0, 0%, 100%);
+  color: var(--branco);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--branco);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
